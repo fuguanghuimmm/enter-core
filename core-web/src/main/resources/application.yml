@@ -4,7 +4,7 @@ server:
   tomcat:
     uri-encoding: UTF-8
   servlet:
-    context-path: /transfer
+    context-path: /core
 
 
 
