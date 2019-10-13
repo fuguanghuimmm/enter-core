@@ -1,5 +1,7 @@
 package com.enter.core.pojo.entity;
 
+import com.enter.core.pojo.entity.infc.TimeSet;
+import com.enter.util.utils.TimeUtils;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -13,7 +15,7 @@ import java.util.Date;
  */
 @Data
 @Table(name = "dormitory_compound")
-public class DormitoryCompound implements Serializable{
+public class DormitoryCompound implements Serializable,TimeSet {
     private static final long serialVersionUID = -4894058107091023668L;
     /**
      * 宿舍大院id
@@ -55,5 +57,21 @@ public class DormitoryCompound implements Serializable{
     @Column(name = "last_update_time")
     private Date lastUpdateTime;
 
+    /**
+     * 使用次数
+     */
+    @Column(name = "usage_counter")
+    private Integer usageCounter;
 
+    @Override
+    public void setAllTime() {
+        Date currentTime = TimeUtils.getCurrentTime();
+        this.setCreateTime(currentTime);
+        this.setLastUpdateTime(currentTime);
+    }
+
+    @Override
+    public void refreshLastUpdateTime() {
+        this.setLastUpdateTime(TimeUtils.getCurrentTime());
+    }
 }

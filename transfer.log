@@ -446,3 +446,386 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.enter.transf
 2019-10-07 16:37:09.820  INFO 1744 --- [main] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Subscribe: provider://192.168.56.1:11043/com.enter.core.service.TestService?anyhost=true&application=enter-core&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=com.enter.core.service.TestService&methods=test&pid=1744&revision=1.0&side=provider&timeout=10000&timestamp=1570437429069&version=1.0, dubbo version: 2.6.2, current host: 192.168.56.1
 2019-10-07 16:37:09.874  INFO 1744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9100 (http) with context path '/transfer'
 2019-10-07 16:37:09.878  INFO 1744 --- [main] com.enter.core.EnterCoreApplication      : Started EnterCoreApplication in 6.591 seconds (JVM running for 7.944)
+2019-10-09 17:25:30.028  INFO 9944 --- [main] c.a.dubbo.common.logger.LoggerFactory    : using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2019-10-09 17:25:30.044  INFO 9944 --- [main] a.b.d.c.e.WelcomeLogoApplicationListener : 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+2019-10-09 17:25:30.044  INFO 9944 --- [main] e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.name=enter-core, dubbo.application.qos-port=25555, dubbo.protocol.name=dubbo, dubbo.protocol.port=11043, dubbo.registry.address=redis://39.108.232.17:6379, dubbo.registry.password=838860376abc, dubbo.registry.username=root, dubbo.scan.base-packages=com.enter.core}
+2019-10-09 17:25:30.528  INFO 9944 --- [main] com.enter.core.EnterCoreApplication      : Starting EnterCoreApplication on LAPTOP-F8HAHUU2 with PID 9944 (D:\javastudy\enter\enter-core\core-web\target\classes started by 符光辉 in D:\javastudy\enter\enter-core)
+2019-10-09 17:25:30.528  INFO 9944 --- [main] com.enter.core.EnterCoreApplication      : No active profile set, falling back to default profiles: default
+2019-10-09 17:25:32.911  INFO 9944 --- [main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+2019-10-09 17:25:32.911  INFO 9944 --- [main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+2019-10-09 17:25:32.911  INFO 9944 --- [main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.RegistryConfig#0, class : com.alibaba.dubbo.config.RegistryConfig] has been registered.
+2019-10-09 17:25:32.911  INFO 9944 --- [main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.RegistryConfig#0] has been registered.
+2019-10-09 17:25:32.911  INFO 9944 --- [main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : com.alibaba.dubbo.config.ProtocolConfig#0, class : com.alibaba.dubbo.config.ProtocolConfig] has been registered.
+2019-10-09 17:25:32.911  INFO 9944 --- [main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProtocolConfig#0] has been registered.
+2019-10-09 17:25:33.801  INFO 9944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-09 17:25:33.801  INFO 9944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-09 17:25:33.864  INFO 9944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2019-10-09 17:25:34.176  INFO 9944 --- [main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:34.176  INFO 9944 --- [main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:34.207  WARN 9944 --- [main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:testService:com.enter.core.service.TestService:1.0, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:34.207  INFO 9944 --- [main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'testService': Generic bean: class [com.enter.core.impl.TestServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\javastudy\enter\enter-core\core-service-impl\target\classes\com\enter\core\impl\TestServiceImpl.class]] } were scanned under package[com.enter.core], dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:34.379  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cityMapper' and 'com.enter.core.database.mysql.mybatis.CityMapper' mapperInterface. Bean already defined with the same name!
+2019-10-09 17:25:34.379  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'districtMapper' and 'com.enter.core.database.mysql.mybatis.DistrictMapper' mapperInterface. Bean already defined with the same name!
+2019-10-09 17:25:34.379  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'dormitoryCompoundMapper' and 'com.enter.core.database.mysql.mybatis.DormitoryCompoundMapper' mapperInterface. Bean already defined with the same name!
+2019-10-09 17:25:34.379  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'projectMapper' and 'com.enter.core.database.mysql.mybatis.ProjectMapper' mapperInterface. Bean already defined with the same name!
+2019-10-09 17:25:34.379  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'schoolMapper' and 'com.enter.core.database.mysql.mybatis.SchoolMapper' mapperInterface. Bean already defined with the same name!
+2019-10-09 17:25:34.379  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'serviceLabelMapper' and 'com.enter.core.database.mysql.mybatis.ServiceLabelMapper' mapperInterface. Bean already defined with the same name!
+2019-10-09 17:25:34.379  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'testMapper' and 'com.enter.core.database.mysql.mybatis.TestMapper' mapperInterface. Bean already defined with the same name!
+2019-10-09 17:25:34.395  WARN 9944 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.enter.core]' package. Please check your configuration.
+2019-10-09 17:25:34.864  INFO 9944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1bfe246] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 17:25:35.067  INFO 9944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$b0c187b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 17:25:35.082  INFO 9944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 17:25:35.098  INFO 9944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 17:25:35.098  INFO 9944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 17:25:36.379  INFO 9944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9100 (http)
+2019-10-09 17:25:36.426  INFO 9944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-09 17:25:36.426  INFO 9944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-09 17:25:36.426  INFO 9944 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-10-09 17:25:36.426  INFO 9944 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-09 17:25:36.426  INFO 9944 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-09 17:25:36.535  INFO 9944 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-10-09 17:25:36.722  INFO 9944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/core]   : Initializing Spring embedded WebApplicationContext
+2019-10-09 17:25:36.722  INFO 9944 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6069 ms
+2019-10-09 17:25:38.660  INFO 9944 --- [main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+2019-10-09 17:25:38.675  INFO 9944 --- [main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : com.alibaba.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+2019-10-09 17:25:38.675  INFO 9944 --- [main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : com.alibaba.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+2019-10-09 17:25:39.253  INFO 9944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-09 17:25:39.472  INFO 9944 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-10-09 17:25:39.503  INFO 9944 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-10-09 17:25:39.503  INFO 9944 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2019-10-09 17:25:40.940  INFO 9944 --- [main] com.alibaba.dubbo.config.AbstractConfig  :  [DUBBO] The service ready on spring started. service: com.enter.core.service.TestService, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:41.034  INFO 9944 --- [main] com.alibaba.dubbo.config.AbstractConfig  :  [DUBBO] Export dubbo service com.enter.core.service.TestService to local registry, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:41.034  INFO 9944 --- [main] com.alibaba.dubbo.config.AbstractConfig  :  [DUBBO] Export dubbo service com.enter.core.service.TestService to url dubbo://192.168.31.68:11043/com.enter.core.service.TestService?anyhost=true&application=enter-core&bind.ip=192.168.31.68&bind.port=11043&dubbo=2.6.2&generic=false&interface=com.enter.core.service.TestService&methods=test&pid=9944&qos.port=25555&revision=1.0&side=provider&timeout=10000&timestamp=1570613140956&version=1.0, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:41.034  INFO 9944 --- [main] com.alibaba.dubbo.config.AbstractConfig  :  [DUBBO] Register dubbo service com.enter.core.service.TestService url dubbo://192.168.31.68:11043/com.enter.core.service.TestService?anyhost=true&application=enter-core&bind.ip=192.168.31.68&bind.port=11043&dubbo=2.6.2&generic=false&interface=com.enter.core.service.TestService&methods=test&pid=9944&qos.port=25555&revision=1.0&side=provider&timeout=10000&timestamp=1570613140956&version=1.0 to registry registry://39.108.232.17:6379/com.alibaba.dubbo.registry.RegistryService?application=enter-core&dubbo=2.6.2&pid=9944&qos.port=25555&registry=redis&timestamp=1570613140956, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:41.815  INFO 9944 --- [main] com.alibaba.dubbo.qos.server.Server      :  [DUBBO] qos-server bind localhost:25555, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:42.099  INFO 9944 --- [main] c.a.d.remoting.transport.AbstractServer  :  [DUBBO] Start NettyServer bind /0.0.0.0:11043, export /192.168.31.68:11043, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:42.178  INFO 9944 --- [main] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Register: dubbo://192.168.31.68:11043/com.enter.core.service.TestService?anyhost=true&application=enter-core&dubbo=2.6.2&generic=false&interface=com.enter.core.service.TestService&methods=test&pid=9944&revision=1.0&side=provider&timeout=10000&timestamp=1570613140956&version=1.0, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:42.303  INFO 9944 --- [main] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Subscribe: provider://192.168.31.68:11043/com.enter.core.service.TestService?anyhost=true&application=enter-core&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=com.enter.core.service.TestService&methods=test&pid=9944&revision=1.0&side=provider&timeout=10000&timestamp=1570613140956&version=1.0, dubbo version: 2.6.2, current host: 192.168.31.68
+2019-10-09 17:25:42.443  INFO 9944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9100 (http) with context path '/core'
+2019-10-09 17:25:42.443  INFO 9944 --- [main] com.enter.core.EnterCoreApplication      : Started EnterCoreApplication in 13.743 seconds (JVM running for 14.915)
+2019-10-09 18:05:41.623  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 39.108.232.17:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 18 common frames omitted
+
+2019-10-09 19:06:05.731  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 39.108.232.17:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 18 common frames omitted
+
+2019-10-09 19:06:36.739  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 39.108.232.17:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 18 common frames omitted
+
+2019-10-09 19:08:10.030  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.3.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:153) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:218) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:341) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:240) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.auth(BinaryJedis.java:2223) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:108) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.3.jar:na]
+	... 22 common frames omitted
+
+2019-10-09 19:08:41.037  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 39.108.232.17:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 18 common frames omitted
+
+2019-10-09 19:09:12.046  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 39.108.232.17:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 18 common frames omitted
+
+2019-10-09 19:13:15.579  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 39.108.232.17:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 18 common frames omitted
+
+2019-10-09 19:13:46.589  WARN 9944 --- [DubboRegistryExpireTimer-thread-1] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to write provider heartbeat to redis registry. registry: 39.108.232.17:6379, cause: Could not get a resource from the pool, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.deferExpired(RedisRegistry.java:170) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry.access$000(RedisRegistry.java:57) [dubbo-2.6.2.jar:2.6.2]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$1.run(RedisRegistry.java:158) [dubbo-2.6.2.jar:2.6.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 39.108.232.17:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:101) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1844) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.3.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349) ~[commons-pool2-2.6.2.jar:2.6.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.3.jar:na]
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_131]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_131]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_131]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_131]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_131]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_131]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.3.jar:na]
+	... 18 common frames omitted
+
+2019-10-09 19:25:52.400  WARN 9944 --- [DubboRedisSubscribe] c.a.dubbo.registry.redis.RedisRegistry   :  [DUBBO] Failed to subscribe service from redis registry. registry: 39.108.232.17:6379, cause: java.net.SocketTimeoutException: Read timed out, dubbo version: 2.6.2, current host: 192.168.31.68
+
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.3.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:153) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:218) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:341) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Connection.getRawObjectMultiBulkReply(Connection.java:288) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPubSub.process(JedisPubSub.java:121) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.JedisPubSub.proceedWithPatterns(JedisPubSub.java:108) ~[jedis-2.9.3.jar:na]
+	at redis.clients.jedis.Jedis.psubscribe(Jedis.java:2736) ~[jedis-2.9.3.jar:na]
+	at com.alibaba.dubbo.registry.redis.RedisRegistry$Notifier.run(RedisRegistry.java:603) ~[dubbo-2.6.2.jar:2.6.2]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(SocketInputStream.java:127) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.3.jar:na]
+	... 9 common frames omitted
+
+2019-10-09 19:27:43.576  WARN 9944 --- [qos-boss-4-1] io.netty.channel.nio.NioEventLoop        : Selector.select() returned prematurely 512 times in a row; rebuilding Selector io.netty.channel.nio.SelectedSelectionKeySetSelector@3eca1edf.
+2019-10-09 19:27:43.604  INFO 9944 --- [qos-boss-4-1] io.netty.channel.nio.NioEventLoop        : Migrated 1 channel(s) to the new Selector.

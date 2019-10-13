@@ -12,5 +12,8 @@
     <result column="priority" jdbcType="INTEGER" property="priority" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="usage_counter" jdbcType="INTEGER" property="usageCounter"/>
   </resultMap>
+  <select id="selectSchoolNameById" parameterType="java.lang.Integer" resultType="java.lang.String">
+    select school.name from district inner join school on district.school_id=school.id where school_id= #{schoolId,jdbcType=INTEGER}</select>
 </mapper>

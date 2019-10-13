@@ -1,5 +1,7 @@
 package com.enter.core.pojo.entity;
 
+import com.enter.core.pojo.entity.infc.TimeSet;
+import com.enter.util.utils.TimeUtils;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -13,7 +15,7 @@ import java.util.Date;
  */
 @Data
 @Table(name = "district")
-public class District implements Serializable{
+public class District implements Serializable,TimeSet {
     private static final long serialVersionUID = -1156598537967837244L;
     /**
      * 区域id
@@ -54,6 +56,28 @@ public class District implements Serializable{
      */
     @Column(name = "last_update_time")
     private Date lastUpdateTime;
+
+    /**
+     * 使用次数
+     */
+    @Column(name = "usage_counter")
+    private Integer usageCounter;
+
+    /**
+     * 获取使用次数
+     * @return
+     */
+    public Integer getUsageCounter() {
+        return usageCounter;
+    }
+
+    /**
+     * 设置使用次数
+     * @param usageCounter
+     */
+    public void setUsageCounter(Integer usageCounter) {
+        this.usageCounter = usageCounter;
+    }
 
     /**
      * 获取区域id
@@ -177,7 +201,21 @@ public class District implements Serializable{
      *
      * @param lastUpdateTime 最后更新时间
      */
+
+
     public void setLastUpdateTime(Date lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
+    }
+
+    @Override
+    public void setAllTime() {
+        Date currentTime = TimeUtils.getCurrentTime();
+        this.setCreateTime(currentTime);
+        this.setLastUpdateTime(currentTime);
+    }
+
+    @Override
+    public void refreshLastUpdateTime() {
+        this.setLastUpdateTime(TimeUtils.getCurrentTime());
     }
 }

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="enter_core@39.108.232.17">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="enter_core">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="enter_3rd_transfer"/>
+    <schema id="4" parent="1" name="enter_customer_service"/>
+    <schema id="5" parent="1" name="enter_data_analysis"/>
+    <schema id="6" parent="1" name="enter_finance"/>
+    <schema id="7" parent="1" name="enter_marketing"/>
+    <schema id="8" parent="1" name="enter_print"/>
+    <schema id="9" parent="1" name="enter_repair"/>
+    <schema id="10" parent="1" name="enter_user"/>
+    <schema id="11" parent="1" name="information_schema"/>
+    <schema id="12" parent="1" name="mysql"/>
+    <schema id="13" parent="1" name="performance_schema"/>
+    <schema id="14" parent="1" name="sys"/>
+    <schema id="15" parent="1" name="xiangying_cinema"/>
+    <table id="16" parent="2" name="city"/>
+    <table id="17" parent="2" name="district"/>
+    <table id="18" parent="2" name="dormitory_compound"/>
+    <table id="19" parent="2" name="enter_test"/>
+    <table id="20" parent="2" name="project"/>
+    <table id="21" parent="2" name="school"/>
+    <table id="22" parent="2" name="service_label"/>
+    <column id="23" parent="16" name="id">
+      <Position>1</Position>
+      <Comment>城市id</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="16" name="name">
+      <Position>2</Position>
+      <Comment>城市名</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="16" name="status">
+      <Position>3</Position>
+      <Comment>禁用状态</Comment>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="26" parent="16" name="priority">
+      <Position>4</Position>
+      <Comment>优先级权重最高100</Comment>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="27" parent="16" name="create_time">
+      <Position>5</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="28" parent="16" name="last_update_time">
+      <Position>6</Position>
+      <Comment>最后更新时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="29" parent="16" name="usage_counter">
+      <Position>7</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <key id="30" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="17" name="id">
+      <Position>1</Position>
+      <Comment>区域id</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="17" name="name">
+      <Position>2</Position>
+      <Comment>区域名</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="17" name="school_id">
+      <Position>3</Position>
+      <Comment>关联学校id</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="17" name="status">
+      <Position>4</Position>
+      <Comment>禁用状态</Comment>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="35" parent="17" name="priority">
+      <Position>5</Position>
+      <Comment>优先级权重最高100</Comment>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="36" parent="17" name="create_time">
+      <Position>6</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="37" parent="17" name="last_update_time">
+      <Position>7</Position>
+      <Comment>最后更新时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="38" parent="17" name="usage_counter">
+      <Position>8</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <key id="39" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="18" name="id">
+      <Position>1</Position>
+      <Comment>宿舍大院id</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="18" name="name">
+      <Position>2</Position>
+      <Comment>大院名</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="18" name="school_id">
+      <Position>3</Position>
+      <Comment>关联学校Id</Comment>
+      <DataType>int(100)|0</DataType>
+    </column>
+    <column id="43" parent="18" name="status">
+      <Position>4</Position>
+      <Comment>禁用状态</Comment>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="44" parent="18" name="priority">
+      <Position>5</Position>
+      <Comment>权重优先级 最高100</Comment>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="45" parent="18" name="create_time">
+      <Position>6</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="46" parent="18" name="last_update_time">
+      <Position>7</Position>
+      <Comment>最后更新时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="47" parent="18" name="usage_counter">
+      <Position>8</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <key id="48" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="19" name="information">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="51" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="20" name="id">
+      <Position>1</Position>
+      <Comment>项目id</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="20" name="name">
+      <Position>2</Position>
+      <Comment>项目名称</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="20" name="user_type">
+      <Position>3</Position>
+      <Comment>项目关联的用户类型</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="55" parent="20" name="school_id">
+      <Position>4</Position>
+      <Comment>关联学习id</Comment>
+      <DataType>int(100)|0</DataType>
+    </column>
+    <column id="56" parent="20" name="school_name">
+      <Position>5</Position>
+      <Comment>关联学校名称</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="57" parent="20" name="status">
+      <Position>6</Position>
+      <Comment>禁用状态</Comment>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="58" parent="20" name="priority">
+      <Position>7</Position>
+      <Comment>优先级权重最高100</Comment>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="59" parent="20" name="flow">
+      <Position>8</Position>
+      <Comment>项目流量</Comment>
+      <DataType>int(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="60" parent="20" name="create_time">
+      <Position>9</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="20" name="last_update_time">
+      <Position>10</Position>
+      <Comment>最后更新时间</Comment>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="62" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="63" parent="21" name="id">
+      <Position>1</Position>
+      <Comment>学校id</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="64" parent="21" name="name">
+      <Position>2</Position>
+      <Comment>学校名</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="21" name="city_id">
+      <Position>3</Position>
+      <Comment>关联city</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="21" name="status">
+      <Position>4</Position>
+      <Comment>禁用状态</Comment>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="67" parent="21" name="priority">
+      <Position>5</Position>
+      <Comment>优先级权重最高100</Comment>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="68" parent="21" name="create_time">
+      <Position>6</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="69" parent="21" name="last_update_time">
+      <Position>7</Position>
+      <Comment>最后一次更新时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="70" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="22" name="id">
+      <Position>1</Position>
+      <Comment>标签id</Comment>
+      <DataType>int(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="72" parent="22" name="name">
+      <Position>2</Position>
+      <Comment>标签名</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="22" name="project_id">
+      <Position>3</Position>
+      <Comment>标签关联项目Id</Comment>
+      <DataType>int(100)|0</DataType>
+    </column>
+    <column id="74" parent="22" name="status">
+      <Position>4</Position>
+      <Comment>禁用状态</Comment>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="75" parent="22" name="priority">
+      <Position>5</Position>
+      <Comment>优先级权重最高100</Comment>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="76" parent="22" name="used_count">
+      <Position>6</Position>
+      <Comment>使用数</Comment>
+      <DataType>int(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="77" parent="22" name="create_time">
+      <Position>7</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="22" name="last_update_tie">
+      <Position>8</Position>
+      <Comment>最后更新时间</Comment>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="79" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

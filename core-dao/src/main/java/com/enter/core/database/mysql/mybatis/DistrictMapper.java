@@ -13,4 +13,5 @@ import tk.mybatis.mapper.common.Mapper;
 @org.apache.ibatis.annotations.Mapper
 @Repository
 public interface DistrictMapper extends Mapper<District> {
+    String selectSchoolNameById(Integer id);
 }
